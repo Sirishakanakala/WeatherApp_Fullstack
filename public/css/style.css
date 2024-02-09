@@ -1,0 +1,190 @@
+h1{
+    color: rgb(28, 26, 42);
+}
+body{
+    background: url(../images/background1.jpg);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: #d5c0ea;
+}
+@keyframes rot {
+   0%{
+    transform: rotate(0deg);
+   } 
+   100%{
+    transform: rotate(360deg);
+   }
+}
+
+.main_header_left{
+    /* margin-top: 150px; */
+    margin-bottom: 150px; 
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;  
+}
+.main_header_left .text_clr{
+    margin-bottom: 100px;
+}
+.main_header_left .button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 10px 10px -5px #d5c0ea;
+}
+.main_header_right{
+    margin: auto;
+}
+footer{
+    background-color: #d5c0ea;
+}
+/* --about page */
+.left .button{
+   
+        border: none;
+        padding: 0.8rem 1.8rem;
+        font-size: 1rem;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        box-shadow: 0 10px 10px -5px #d5c0ea;
+    
+}
+/* weather page */
+.tempInform{
+    width: 20rem;
+    margin: auto;
+    min-height: 10rem;
+    background-color: rgba(59, 44, 82, 0.5);
+    border-radius: 1rem;
+    font-family: "Roboto" , sans-serif;
+}
+.top_layer{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(73, 52, 108, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.4rem;
+}
+.top_layer p{
+    color: rgb(184, 174, 189);
+    font-weight: 550;
+    padding: 0.5rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main_layer{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.main_layer #city_name{
+    color:rgb(197, 157, 216);
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.main_layer .middle_layer{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.main_layer .middle_layer #temp{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.main_layer .middle_layer #temp_status{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.fa{
+    color: rgb(239, 239, 239);
+}
+sup{
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+.temp_form{
+    width: 70%;
+    position: relative;
+    margin: 2rem auto 4rem;
+}
+.temp_form input[type= "text"]{
+    width: 100%;
+    padding: 0.5rem;
+    background: rgba(56, 39, 83,0.7);
+    color: rgb(188, 155, 206);
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 3rem;
+}
+::placeholder{
+    color: #af9bc3;
+    text-align: left;
+    font-size: 1rem;
+}
+.temp_form input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #936eba;
+    padding: 0 1rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1rem;
+}
+.temp_form input[type="submit"]:hover{
+    color: #644585;
+    background-color: white;
+}
+
+@media (max-width: 768px){
+    .main_header_left{
+        height: auto;
+        margin-top: 3rem;
+    }
+    .main_header_right{
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .temp_form{
+        width: auto;  
+    }
+    .tempInform{
+        width: auto;
+    }
+    .main_layer .middle_layer #temp{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .main_layer .middle_layer #temp_status{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
